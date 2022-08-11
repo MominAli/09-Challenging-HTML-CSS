@@ -1,0 +1,177 @@
+
+:root{
+    /* Text */
+
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    
+    /* Gradient */
+    
+    /* Background gradient: */
+    
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    
+    /* Neutral */
+    
+    /* Text */
+    
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    
+    /* Dividers */
+    
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+
+    --font-primary: 'Kumbh Sans', sans-serif;
+}
+
+html{ box-sizing: border-box; }
+
+*, *::before, *::after{ box-sizing: inherit; }
+
+img{ max-width: 100%; }
+
+body{
+    font-family: var(--font-primary);
+    font-size: 12px;
+    padding: 10rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    background-image: linear-gradient(var(--Soft-violet), var(--Soft-blue));
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.card{
+    background-color: white;
+    border-radius: 1.5rem;
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-top: 0rem;
+    position: relative;
+
+    text-align: center;
+
+    background-image: url('images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    background-size: 15rem;
+}
+
+.card--head__center{ position: relative; }
+
+.card--head__center img{
+    position: absolute;
+    top: -6.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    height: auto;
+    width: 100%;
+    max-width: 15rem;
+}
+
+.card--title{ padding-top: 8rem; }
+
+.section--question{
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.line {
+    display: inline-block;
+    border-top: 2px solid var(--Light-grayish-blue);
+    width: 100%;
+}
+
+.icon{
+    width: .6rem;
+    height: .5rem;
+}
+
+.section--answer__style{
+    font-weight: 500;
+    line-height: 1.1rem;
+    text-align: start;
+    color: var(--Dark-grayish-blue);
+}
+
+.flip{ transform: scaleY(-1); }
+
+.desktop, .box, .active{ display: none; }
+
+.font--color{
+    font-weight: bold;
+    color: black;
+}
+
+.card--section:hover{ cursor: pointer; }
+
+@media (min-width: 980px) {
+    body{
+        padding: 0;
+        height: 100vh;
+    }
+
+    .card--head .mobile{ display: none; }
+
+    .desktop{ display: block; }
+
+    .card--head__left .woman,
+    .card--head__left .pattern{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: auto;
+        width: auto;
+        display: block;
+        max-width: 40rem;
+    }
+    
+    .card--head__left .pattern{
+        transform: translate(-50%,-27%);
+        height: 45rem;
+        width: 40rem;
+    }
+
+    .card--head__left .woman{
+        transform: translate(-17%,23%);
+        height: auto;
+        width: 24rem;
+    }
+
+    .card--head__left .box{
+        transform: translate(-90%,65%);
+        position: fixed;
+    }
+
+    .card{
+        padding: 3rem 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: none;
+        background-size: 15rem;
+        overflow: hidden;
+    }
+    
+    .card--title{
+        text-align: start;
+        padding-top: 0rem;
+    }
+
+    #card--description{ padding-right: 1rem; }
+}

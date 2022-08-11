@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <main class="main">
+    <div class="card">
+      <div class="card--head">
+        <div class="card--head__left">
+          <img class="desktop pattern" src="./images/bg-pattern-desktop.svg" alt="">
+          <img class="desktop woman" src="./images/illustration-woman-online-desktop.svg" alt="">
+          <img class="desktop box" src="./images/illustration-box-desktop.svg" alt="">
+        </div>
+        
+        <div class="card--head__center">  
+          <img class="mobile" src="./images/illustration-woman-online-mobile.svg" alt="">
+        </div>
+      </div>
+      
+      <div id="card--description">
+        <h1 class="card--title">FAQ</h1>
+
+        <div class="card--section">
+          <p id="section-question-1" class="section--question">How many team members can I invite? <span><img id='answer-arrow-1' class="icon" src="./images/icon-arrow-down.svg" alt=""></span> </p>
+          <p id="answer-1" class="active section--answer__style">
+            You can invite up to 2 additional users on the Free plan. There is no limit on
+            team members for the Premium plan.
+          </p>
+          <div class="line"></div>
+        </div>
+
+        <div class="card--section">
+          <p id="section-question-2" class="section--question">What is the maximum file upload size? <span><img id='answer-arrow-2' class="icon" src="./images/icon-arrow-down.svg" alt=""></span></p>
+          <p id="answer-2" class="active section--answer__style">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          <div class="line"></div>
+        </div>
+
+        <div class="card--section">
+          <p  id="section-question-3" class="section--question">How do I reset my password? <span><img id='answer-arrow-3' class="icon" src="./images/icon-arrow-down.svg" alt=""></span></p>
+          <p id="answer-3" class="active section--answer__style">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </p>
+          <div class="line"></div>
+        </div>
+        
+        <div class="card--section"">
+          <p id="section-question-4"  class="section--question">Can I cancel my subscription? <span><img id='answer-arrow-4' class="icon" src="./images/icon-arrow-down.svg" alt=""></span> </p>
+          <p id="answer-4" class="active section--answer__style">Yes! Send us a message and we’ll process your request no questions asked.</p>
+         <div class="line"></div>
+        </div>
+
+        <div class="card--section">
+          <p id="section-question-5" class="section--question">Do you provide additional support? <span><img id='answer-arrow-5' class="icon" src="./images/icon-arrow-down.svg" alt=""></span></p>
+          <p id="answer-5" class="active section--answer__style">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          <div class="line"></div>
+        </div>
+        
+      </div>
+    </div>
+
+  </main>
+  
+  <script src="./index.js"></script>
+</body>
+</html>
